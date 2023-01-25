@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import '@nevermined-io/styles/lib/esm/styles/globals.scss'
 import clsx from 'clsx'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
@@ -22,6 +22,12 @@ function HomepageHeader() {
           {siteConfig.title}
         </UiText>
 
+        {siteConfig.customFields?.subtitle && (
+          <UiText type="p" variants={['heading']} className={b('subtitle')}>
+            {siteConfig.customFields.subtitle as ReactNode}
+          </UiText>
+        )}
+
         <UiText type="p" className={b('description')}>
           {siteConfig.tagline}
         </UiText>
@@ -36,34 +42,30 @@ const FeatureList: BoxItem[] = [
     className: clsx(b('box', ['main'])),
     link: 'docs/getting-started',
     Svg: nvmSVGIcon,
-    description: (
-      <>
-        Nevermined in detail about what is it, for what is useful and use cases
-      </>
-    ),
+    description: <>What is Nevermined? And what can I use it for?</>,
     overlay: <div className={b('box-overlay')} />,
   },
   {
-    title: 'Integration',
+    title: 'SDK',
     className: b('box'),
     link: 'docs/catalog/intro',
     Svg: integrationDocsSVGIcon,
     description: (
       <>
-        All the documentation that you need to start to integrate Nevermined in
-        your project
+        Everything you need to know about using Nevermined via our SDK. For
+        developers who want to use a low-level library.
       </>
     ),
   },
   {
-    title: 'Tutorials',
+    title: 'React Catalog',
     className: b('box'),
     link: 'docs/tutorials',
     png: tutorialPNGIcon,
     description: (
       <>
-        Tutorials which will guide you, step by step, how you can achieve
-        different features easly in your project with Nevermined
+        Everything you need to know about using Nevermined via our Catalog. For
+        developers who are using React.
       </>
     ),
   },

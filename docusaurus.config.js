@@ -9,13 +9,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 const config = {
   title: 'Nevermined Documentation',
   tagline:
-    'Nevermined is an ecosystem development platform. It offers the best of Web3 tech as easy-to-integrate components.',
+    'Nevermined provides developer tools and templates to unlock the next level utility behind NFT technology and turn anything and everything into a Web3-ready asset.',
   url: 'https://docs.nevermined.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   plugins: ['docusaurus-plugin-sass', './src/plugins/http-support'],
+  customFields: {
+    subtitle: 'Utility unleashed',
+  },
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -35,7 +38,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-		gtag: {
+        gtag: {
           trackingID: 'G-S70X8HQFLP',
           anonymizeIP: true,
         },
@@ -90,7 +93,7 @@ const config = {
             position: 'left',
             label: 'SDK',
             to: 'docs/nevermined-sdk/getting-started',
-          },          
+          },
           {
             position: 'left',
             label: 'Tutorials',
