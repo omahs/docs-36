@@ -30,7 +30,7 @@ Instructions for following along locally using your preferred text editor.
 
 Once the react app is running and you have your catalog dependency, the next step will be to setup the configuration:
 
-1. Donwload [Nevermined abi](http://artifacts-nevermined-rocks.s3.amazonaws.com/80001/public/contracts_v2.0.0.tar.gz) and store them in a folder named contracts in the public folder. These abis are the interface to interact with Nevermined contracts deployed on the blockchain. Visit [ABI specification](https://docs.soliditylang.org/en/develop/abi-spec.html) to learn more about it.
+1. Download [Nevermined abi](http://artifacts-nevermined-rocks.s3.amazonaws.com/80001/public/contracts_v2.0.0.tar.gz) and store them in a folder named contracts in the public folder. These ABIs are the interface to interact with Nevermined contracts deployed on the blockchain. Visit [ABI specification](https://docs.soliditylang.org/en/develop/abi-spec.html) to learn more about it.
 2. Create a `config.ts` file and provide the Nevermined config as follow:
 
 :::tip
