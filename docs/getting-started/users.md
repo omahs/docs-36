@@ -5,7 +5,7 @@ description: Who can use Nevermined
 
 # Who can use Nevermined
 
-Nevermined is designed by Web3 builders for Web3 builders. Those who are working with digital assets and NFT technology, but want to add advanced utility to these assets.
+Nevermined is designed by Web3 builders for Web3 builders: those who are working with digital assets and NFT technology, but want to add advanced utility to these assets.
 
 In other words, every Web3 developer. 😂
 
