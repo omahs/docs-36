@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[providers/src/types.ts:4](https://github.com/nevermined-io/components-catalog/blob/b886bce/providers/src/types.ts#L4)
+[providers/src/types.ts:4](https://github.com/nevermined-io/components-catalog/blob/4f74426/providers/src/types.ts#L4)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[providers/src/types.ts:21](https://github.com/nevermined-io/components-catalog/blob/b886bce/providers/src/types.ts#L21)
+[providers/src/types.ts:21](https://github.com/nevermined-io/components-catalog/blob/4f74426/providers/src/types.ts#L21)
 
 ## Variables
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[providers/src/client.tsx:107](https://github.com/nevermined-io/components-catalog/blob/b886bce/providers/src/client.tsx#L107)
+[providers/src/client.tsx:107](https://github.com/nevermined-io/components-catalog/blob/4f74426/providers/src/client.tsx#L107)
 
 ## Functions
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[providers/src/client.tsx:109](https://github.com/nevermined-io/components-catalog/blob/b886bce/providers/src/client.tsx#L109)
+[providers/src/client.tsx:109](https://github.com/nevermined-io/components-catalog/blob/4f74426/providers/src/client.tsx#L109)
 
 ___
 
@@ -164,7 +164,7 @@ All the functionalities to handle the wallet in dapp
 
 #### Defined in
 
-[providers/src/providers.tsx:43](https://github.com/nevermined-io/components-catalog/blob/b886bce/providers/src/providers.tsx#L43)
+[providers/src/providers.tsx:43](https://github.com/nevermined-io/components-catalog/blob/4f74426/providers/src/providers.tsx#L43)
 
 ___
 
@@ -188,7 +188,7 @@ function that build and return the wagmi client
 
 #### Defined in
 
-[providers/src/client.tsx:30](https://github.com/nevermined-io/components-catalog/blob/b886bce/providers/src/client.tsx#L30)
+[providers/src/client.tsx:30](https://github.com/nevermined-io/components-catalog/blob/4f74426/providers/src/client.tsx#L30)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[providers/src/client.tsx:194](https://github.com/nevermined-io/components-catalog/blob/b886bce/providers/src/client.tsx#L194)
+[providers/src/client.tsx:194](https://github.com/nevermined-io/components-catalog/blob/4f74426/providers/src/client.tsx#L194)
 
 ___
 
@@ -222,4 +222,4 @@ ___
 
 #### Defined in
 
-[providers/src/utils/index.ts:1](https://github.com/nevermined-io/components-catalog/blob/b886bce/providers/src/utils/index.ts#L1)
+[providers/src/utils/index.ts:1](https://github.com/nevermined-io/components-catalog/blob/4f74426/providers/src/utils/index.ts#L1)
