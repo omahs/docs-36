@@ -8,7 +8,7 @@ import QueryAssets from '@site/src/components/queryAssets';
 
 # How to query assets with Catalog
 
-With Catalog is possible to search specific assets by using the [`query`](../catalog/core/API/interfaces/AssetsModule.md#query) method from [`AssetsModule`](../catalog/core/API/interfaces/AssetsModule.md). Here there are some examples to show how to use it
+With Catalog is possible to search specific assets by using the [`query`](../react-components/catalog/API/interfaces/AssetsModule.md#query) method from [`AssetsModule`](../react-components/catalog/API/interfaces/AssetsModule.md). Here there are some examples to show how to use it
 
 ## Search by asset name
 
@@ -52,7 +52,7 @@ const QuerySearchByName = (): => {
     <>
       <UiForm>
         <UiFormInput 
-          label='Search by name: (try with Aave) '
+          label='Search by name: (try with NFT) '
           onChange={(e) => onSearchByName(e.target.value)}/>
       </UiForm>
 
@@ -331,26 +331,35 @@ const QuerySearchByFilters = () => {
   const onSearchByFilters = async() => {
     if(!page || !size || !name) {
       setNameRequired(!name ? 'name input is required' : '');
-      setPageRequired(!page || page <= 0 ? setMessage('page', page): '');
+      setPageRequired(!page || page < 0 ? setMessage('page', page): '');
       setSizeRequired(!size || size <= 0 ? setMessage('size', size): '');
       setDdos([]);
 
       return;
     }
 
-    const response = await assets.query({
+    const response = await assetsModule.query({
       query: {
-        "query_string": {
-          query: `*${name}*`,
-          fields: ["service.attributes.main.name"]
-        },
+        bool: {
+          must: [{
+            nested: {
+              path: ['service'],
+              query: {
+                "query_string": {
+                  query: `*${name}*`,
+                  fields: ["service.attributes.main.name"]
+                },
+              },
+            }
+          }]
+        }
       },
       offset: size,
       page,
       sort: {
         created: short
       }
-    });
+    })
 
     setDdos(response.results || []);
   };
@@ -367,7 +376,7 @@ const QuerySearchByFilters = () => {
     <>
       <UiForm>
         <UiFormInput 
-          label='Search by name: (try with Aave)'
+          label='Search by name: (try with NFT)'
           inputError={nameRequired}
           onChange={(e) => setName(e.target.value)}/>
         <UiFormInput 
