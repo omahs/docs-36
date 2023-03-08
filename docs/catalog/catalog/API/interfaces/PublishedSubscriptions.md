@@ -4,25 +4,25 @@
 
 ### Properties
 
-- [address](PublishedSubscriptions.md#address)
-- [ddos](PublishedSubscriptions.md#ddos)
+- [services](PublishedSubscriptions.md#services)
+- [subscription](PublishedSubscriptions.md#subscription)
 
 ## Properties
 
-### address
+### services
 
-• **address**: `string`
+• **services**: `DDO`[]
 
 #### Defined in
 
-[types/index.ts:896](https://github.com/nevermined-io/react-components/blob/30dad8d/catalog/src/types/index.ts#L896)
+[types/index.ts:906](https://github.com/nevermined-io/react-components/blob/9f2a180/catalog/src/types/index.ts#L906)
 
 ___
 
-### ddos
+### subscription
 
-• **ddos**: `DDO`[]
+• **subscription**: `DDO`
 
 #### Defined in
 
-[types/index.ts:897](https://github.com/nevermined-io/react-components/blob/30dad8d/catalog/src/types/index.ts#L897)
+[types/index.ts:905](https://github.com/nevermined-io/react-components/blob/9f2a180/catalog/src/types/index.ts#L905)
