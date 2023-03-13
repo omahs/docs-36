@@ -34,9 +34,9 @@
 - [NFTSModule](interfaces/NFTSModule.md)
 - [NeverminedProviderContext](interfaces/NeverminedProviderContext.md)
 - [NeverminedProviderProps](interfaces/NeverminedProviderProps.md)
-- [PublishedSubscriptions](interfaces/PublishedSubscriptions.md)
 - [RegisterEvent](interfaces/RegisterEvent.md)
 - [SubscribeModule](interfaces/SubscribeModule.md)
+- [SubscriptionsAndServicesDDOs](interfaces/SubscriptionsAndServicesDDOs.md)
 - [Transfer](interfaces/Transfer.md)
 - [UserProfileParams](interfaces/UserProfileParams.md)
 
@@ -49,6 +49,7 @@
 - [conductOrder](modules.md#conductorder)
 - [getAgreementId](modules.md#getagreementid)
 - [getCurrentAccount](modules.md#getcurrentaccount)
+- [getSubscriptionsAndServices](modules.md#getsubscriptionsandservices)
 - [handlePostRequest](modules.md#handlepostrequest)
 - [isEmptyObject](modules.md#isemptyobject)
 - [loadFulfilledEvents](modules.md#loadfulfilledevents)
@@ -63,7 +64,7 @@ Id of the asset
 
 #### Defined in
 
-[types/index.ts:302](https://github.com/nevermined-io/react-components/blob/cbb6826/catalog/src/types/index.ts#L302)
+[types/index.ts:302](https://github.com/nevermined-io/react-components/blob/090277e/catalog/src/types/index.ts#L302)
 
 ## Functions
 
@@ -92,7 +93,7 @@ Agreement id generated after order an asset
 
 #### Defined in
 
-[utils/index.ts:40](https://github.com/nevermined-io/react-components/blob/cbb6826/catalog/src/utils/index.ts#L40)
+[utils/index.ts:40](https://github.com/nevermined-io/react-components/blob/090277e/catalog/src/utils/index.ts#L40)
 
 ___
 
@@ -118,7 +119,7 @@ Agreement id generated after order an asset
 
 #### Defined in
 
-[utils/index.ts:116](https://github.com/nevermined-io/react-components/blob/cbb6826/catalog/src/utils/index.ts#L116)
+[utils/index.ts:116](https://github.com/nevermined-io/react-components/blob/090277e/catalog/src/utils/index.ts#L116)
 
 ___
 
@@ -141,7 +142,28 @@ Returns current account registered in SDK
 
 #### Defined in
 
-[utils/index.ts:17](https://github.com/nevermined-io/react-components/blob/cbb6826/catalog/src/utils/index.ts#L17)
+[utils/index.ts:17](https://github.com/nevermined-io/react-components/blob/090277e/catalog/src/utils/index.ts#L17)
+
+___
+
+### getSubscriptionsAndServices
+
+▸ **getSubscriptionsAndServices**(`subscriptionsDDOs`, `sdk`): `Promise`<{ `services`: `DDO`[] = query.results; `subscription`: `DDO` = ddo }[]\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `subscriptionsDDOs` | `DDO`[] |
+| `sdk` | `Nevermined` |
+
+#### Returns
+
+`Promise`<{ `services`: `DDO`[] = query.results; `subscription`: `DDO` = ddo }[]\>
+
+#### Defined in
+
+[utils/index.ts:170](https://github.com/nevermined-io/react-components/blob/090277e/catalog/src/utils/index.ts#L170)
 
 ___
 
@@ -167,7 +189,7 @@ Return the result data of the request
 
 #### Defined in
 
-[utils/index.ts:145](https://github.com/nevermined-io/react-components/blob/cbb6826/catalog/src/utils/index.ts#L145)
+[utils/index.ts:145](https://github.com/nevermined-io/react-components/blob/090277e/catalog/src/utils/index.ts#L145)
 
 ___
 
@@ -191,7 +213,7 @@ Checks if object is empty
 
 #### Defined in
 
-[utils/index.ts:11](https://github.com/nevermined-io/react-components/blob/cbb6826/catalog/src/utils/index.ts#L11)
+[utils/index.ts:11](https://github.com/nevermined-io/react-components/blob/090277e/catalog/src/utils/index.ts#L11)
 
 ___
 
@@ -217,4 +239,4 @@ Array of object with the document id of each fullfilled events
 
 #### Defined in
 
-[utils/index.ts:87](https://github.com/nevermined-io/react-components/blob/cbb6826/catalog/src/utils/index.ts#L87)
+[utils/index.ts:87](https://github.com/nevermined-io/react-components/blob/090277e/catalog/src/utils/index.ts#L87)

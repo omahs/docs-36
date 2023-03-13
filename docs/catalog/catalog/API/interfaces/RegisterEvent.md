@@ -21,7 +21,7 @@ The block number of the blockchain which the asset was updated
 
 #### Defined in
 
-[types/index.ts:738](https://github.com/nevermined-io/react-components/blob/cbb6826/catalog/src/types/index.ts#L738)
+[types/index.ts:743](https://github.com/nevermined-io/react-components/blob/090277e/catalog/src/types/index.ts#L743)
 
 ___
 
@@ -33,7 +33,7 @@ Id of the asset
 
 #### Defined in
 
-[types/index.ts:732](https://github.com/nevermined-io/react-components/blob/cbb6826/catalog/src/types/index.ts#L732)
+[types/index.ts:737](https://github.com/nevermined-io/react-components/blob/090277e/catalog/src/types/index.ts#L737)
 
 ___
 
@@ -45,7 +45,7 @@ The last modification of the asset
 
 #### Defined in
 
-[types/index.ts:736](https://github.com/nevermined-io/react-components/blob/cbb6826/catalog/src/types/index.ts#L736)
+[types/index.ts:741](https://github.com/nevermined-io/react-components/blob/090277e/catalog/src/types/index.ts#L741)
 
 ___
 
@@ -57,4 +57,4 @@ Owner of the asset
 
 #### Defined in
 
-[types/index.ts:734](https://github.com/nevermined-io/react-components/blob/cbb6826/catalog/src/types/index.ts#L734)
+[types/index.ts:739](https://github.com/nevermined-io/react-components/blob/090277e/catalog/src/types/index.ts#L739)
