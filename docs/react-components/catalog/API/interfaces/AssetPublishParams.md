@@ -28,7 +28,7 @@ Files to download after buy the asset
 
 #### Defined in
 
-[types/index.ts:689](https://github.com/nevermined-io/components-catalog/blob/4f74426/catalog/src/types/index.ts#L689)
+[types/index.ts:710](https://github.com/nevermined-io/react-components/blob/799d5c9/catalog/src/types/index.ts#L710)
 
 ___
 
@@ -40,7 +40,7 @@ Who create the asset
 
 #### Defined in
 
-[types/index.ts:679](https://github.com/nevermined-io/components-catalog/blob/4f74426/catalog/src/types/index.ts#L679)
+[types/index.ts:700](https://github.com/nevermined-io/react-components/blob/799d5c9/catalog/src/types/index.ts#L700)
 
 ___
 
@@ -52,7 +52,7 @@ The category that belong the asset
 
 #### Defined in
 
-[types/index.ts:685](https://github.com/nevermined-io/components-catalog/blob/4f74426/catalog/src/types/index.ts#L685)
+[types/index.ts:706](https://github.com/nevermined-io/react-components/blob/799d5c9/catalog/src/types/index.ts#L706)
 
 ___
 
@@ -64,7 +64,7 @@ Description about what is the utility of the asset
 
 #### Defined in
 
-[types/index.ts:681](https://github.com/nevermined-io/components-catalog/blob/4f74426/catalog/src/types/index.ts#L681)
+[types/index.ts:702](https://github.com/nevermined-io/react-components/blob/799d5c9/catalog/src/types/index.ts#L702)
 
 ___
 
@@ -76,7 +76,7 @@ Name of the asset
 
 #### Defined in
 
-[types/index.ts:677](https://github.com/nevermined-io/components-catalog/blob/4f74426/catalog/src/types/index.ts#L677)
+[types/index.ts:698](https://github.com/nevermined-io/react-components/blob/799d5c9/catalog/src/types/index.ts#L698)
 
 ___
 
@@ -88,7 +88,7 @@ Price of the asset
 
 #### Defined in
 
-[types/index.ts:687](https://github.com/nevermined-io/components-catalog/blob/4f74426/catalog/src/types/index.ts#L687)
+[types/index.ts:708](https://github.com/nevermined-io/react-components/blob/799d5c9/catalog/src/types/index.ts#L708)
 
 ___
 
@@ -100,4 +100,4 @@ The type of the asset
 
 #### Defined in
 
-[types/index.ts:683](https://github.com/nevermined-io/components-catalog/blob/4f74426/catalog/src/types/index.ts#L683)
+[types/index.ts:704](https://github.com/nevermined-io/react-components/blob/799d5c9/catalog/src/types/index.ts#L704)
