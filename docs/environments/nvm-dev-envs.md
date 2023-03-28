@@ -42,3 +42,18 @@ For example for Nevermined Polygon Mumbai:
 
 https://thegraph.com/hosted-service/subgraph/nevermined-io/publicmumbaiv2neverminedtoken
 
+
+## Filecoin - Hyperspace
+
+### Public Hyperspace deployment (v3)
+
+This is a **public** network deployment (`TAG_NAME=public`) of the Nevermined Contracts v3 in the Filecoin Hyperspace network. You can use this network if you want to integrate with Nevermined in a Filecoin FVM Testnet.
+
+The **addresses** of the Nevermined Contracts can be found here: https://artifacts.nevermined.network/3141/public/contracts_v3.0.1.json
+
+The **ABIs of the contracts** to connect via SDK can be download from here: https://artifacts.nevermined.network/3141/public/contracts_v3.0.1.tar.gz
+
+| Environment | Network | Contracts Version | Tag | Component | URL | Comments |
+|-------------|---------|-------------------|-----|-----------|-----|----------|
+| [public-v3-hyperspace](https://artifacts.nevermined.network/3141/public/contracts_v3.0.1.json) | Hyperspace | 3.0.1 | public | Node | - | |
+| public-v3-hyperspace | Hyperspace | - | public | Marketplace API | - | |
