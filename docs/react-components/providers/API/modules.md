@@ -19,7 +19,6 @@
 
 - [ClientComp](modules.md#clientcomp)
 - [WalletProvider](modules.md#walletprovider)
-- [getClient](modules.md#getclient)
 - [useWallet](modules.md#usewallet)
 - [zeroX](modules.md#zerox)
 
@@ -50,7 +49,7 @@
 
 #### Defined in
 
-[providers/src/types.ts:4](https://github.com/nevermined-io/react-components/blob/099fc1a/providers/src/types.ts#L4)
+[types.ts:4](https://github.com/nevermined-io/react-components/blob/fb52fe4/providers/src/types.ts#L4)
 
 ___
 
@@ -70,7 +69,7 @@ ___
 
 #### Defined in
 
-[providers/src/types.ts:21](https://github.com/nevermined-io/react-components/blob/099fc1a/providers/src/types.ts#L21)
+[types.ts:21](https://github.com/nevermined-io/react-components/blob/fb52fe4/providers/src/types.ts#L21)
 
 ## Variables
 
@@ -80,7 +79,7 @@ ___
 
 #### Defined in
 
-[providers/src/client.tsx:108](https://github.com/nevermined-io/react-components/blob/099fc1a/providers/src/client.tsx#L108)
+[client.tsx:43](https://github.com/nevermined-io/react-components/blob/fb52fe4/providers/src/client.tsx#L43)
 
 ## Functions
 
@@ -104,7 +103,7 @@ ___
 
 #### Defined in
 
-[providers/src/client.tsx:110](https://github.com/nevermined-io/react-components/blob/099fc1a/providers/src/client.tsx#L110)
+[client.tsx:45](https://github.com/nevermined-io/react-components/blob/fb52fe4/providers/src/client.tsx#L45)
 
 ___
 
@@ -164,35 +163,7 @@ All the functionalities to handle the wallet in dapp
 
 #### Defined in
 
-[providers/src/providers.tsx:43](https://github.com/nevermined-io/react-components/blob/099fc1a/providers/src/providers.tsx#L43)
-
-___
-
-### getClient
-
-▸ **getClient**(`appName?`, `autoConnect?`, `chainsConfig?`): `Client`<`Object`, `WebSocketProvider`\> & {}
-
-function that build and return the wagmi client
-
-**`Deprecated`**
-
-use `Wagmi.createClient` instead, [see here](https://docs.nevermined.io/docs/tutorials/login-wallet-provider)
-
-#### Parameters
-
-| Name | Type | Default value | Description |
-| :------ | :------ | :------ | :------ |
-| `appName` | `string` | `'Nevermined'` | App name required for Coinbase wallet. If appName is undefined Coinbase wallet won't be supported |
-| `autoConnect` | `boolean` | `true` | If it is true once that the dapp start to run it will try to connect to the wallet automatically. Default `true` |
-| `chainsConfig` | `Chain`[] | `ChainsConfig` | Config with all the available chains that can be used in the dapp. Default chains supported `Polygon Mainnet`, `Polygon Mumbai`, `spree (localhost) |
-
-#### Returns
-
-`Client`<`Object`, `WebSocketProvider`\> & {}
-
-#### Defined in
-
-[providers/src/client.tsx:31](https://github.com/nevermined-io/react-components/blob/099fc1a/providers/src/client.tsx#L31)
+[providers.tsx:43](https://github.com/nevermined-io/react-components/blob/fb52fe4/providers/src/providers.tsx#L43)
 
 ___
 
@@ -206,7 +177,7 @@ ___
 
 #### Defined in
 
-[providers/src/client.tsx:195](https://github.com/nevermined-io/react-components/blob/099fc1a/providers/src/client.tsx#L195)
+[client.tsx:130](https://github.com/nevermined-io/react-components/blob/fb52fe4/providers/src/client.tsx#L130)
 
 ___
 
@@ -226,4 +197,4 @@ ___
 
 #### Defined in
 
-[providers/src/utils/index.ts:1](https://github.com/nevermined-io/react-components/blob/099fc1a/providers/src/utils/index.ts#L1)
+[utils/index.ts:1](https://github.com/nevermined-io/react-components/blob/fb52fe4/providers/src/utils/index.ts#L1)
