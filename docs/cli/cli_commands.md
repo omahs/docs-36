@@ -231,6 +231,7 @@ This command registers a new asset on the Nevermined network. This registered as
 | **name** | `string` |  &#x2611;  |    | The asset name |
 | **author** | `string` |  &#x2611;  |    | The author of the asset |
 | **dateCreated** | `string` |  |    | When the asset was created |
+| **tags** | `string` |  &#x2612;  |    | Comma separated list of tags |
 | **access** | `string` |  |  `direct`  | The type of access control associated to the asset. If `direct` the asset will allow direct payment, if `susbcription` it will allow access via NFT susbcription, if both it will configure both methods. |
 | **price** | `number` |  |  `0`  | The asset price |
 | **urls** | `array` |  &#x2611;  |    | The asset urls. It can be a comma separated list of urls for multiple files |
@@ -265,6 +266,7 @@ This command registers a new algorithm on the Nevermined network. The algorithm 
 | **name** | `string` |  &#x2611;  |    | The asset name |
 | **author** | `string` |  &#x2611;  |    | The author of the asset |
 | **dateCreated** | `string` |  |    | When the asset was created |
+| **tags** | `string` |  &#x2612;  |    | Comma separated list of tags |
 | **access** | `string` |  |  `direct`  | The type of access control associated to the asset. If `direct` the asset will allow direct payment, if `susbcription` it will allow access via NFT susbcription, if both it will configure both methods. |
 | **price** | `number` |  |  `0`  | The asset price |
 | **urls** | `array` |  &#x2611;  |    | The asset urls. It can be a comma separated list of urls for multiple files |
@@ -301,6 +303,7 @@ This command registers a new web service on the Nevermined network. The service 
 | **name** | `string` |  &#x2611;  |    | The asset name |
 | **author** | `string` |  &#x2611;  |    | The author of the asset |
 | **dateCreated** | `string` |  |    | When the asset was created |
+| **tags** | `string` |  &#x2612;  |    | Comma separated list of tags |
 | **access** | `string` |  |  `subscription`  | The type of access control associated to the asset. If `direct` the asset will allow direct payment, if `susbcription` it will allow access via NFT susbcription, if both it will configure both methods. |
 | **price** | `number` |  |  `0`  | The asset price |
 | **urls** | `array` |  &#x2611;  |    | The asset urls. It can be a comma separated list of urls for multiple files |
@@ -798,7 +801,7 @@ Having a previously deployed ERC-721 NFT contract, this command registers a new 
 | **license** | `string` |  |    | The asset license (Creative Commons, etc) |
 | **price** | `number` |  |  `0`  | The NFT price |
 | **preMint** | `boolean` |  |  `false`  | If true the NFTs will be minted during creation |
-| **subscription** | `boolean` |  |  `false`  | The NFT contract allows to mint NFTs as subscriptions |
+| **type** | `string` |  |  `dataset`  | The type of asset to register (dataset, algorithm, workflow, container, subscription) |
 | **transfer** | `boolean` |  |  `true`  | It allows to transfer a NFT when purchased or mint |
 | **duration** | `number` |  |  `0`  | If the asset refers to a subscription, this parameter define the duration of that subscription in blocks |
 | **royalties** | `number` |  |  `0`  | The royalties (between 0 and 100%) to reward to the original creator in the secondary market. |
@@ -969,8 +972,8 @@ ncli nfts721 order did:nv:afd733c23c41af948be7ec039c3fb2048d437e082a69ea3f336cdf
 
 
 
-### transfer [agreementId]
-It allows to transfer a NFT (ERC-721) to the account of the buyer<br/>
+### claim [agreementId]
+It allows to claim a NFT (ERC-721) to the account of the buyer<br/>
 
 This command requires a valid `serviceAgreementId` and the `sellerAddress` that demonstrates that an asset was bought. The asset is then transferred to the buyer&#39;s account.<br/>
 
@@ -994,7 +997,7 @@ This command requires a valid `serviceAgreementId` and the `sellerAddress` that 
 
 
 ```bash
-ncli nfts721 transfer 0x44dba17d62dd4004c109921cb976ac7c5ec6e4c07d24cc82182b0c49c6381869
+ncli nfts721 claim 0x44dba17d62dd4004c109921cb976ac7c5ec6e4c07d24cc82182b0c49c6381869
 ```
 
 
@@ -1183,6 +1186,7 @@ This command registers a new asset that allows the publisher to provide access t
 | **urls** | `array` |  |    | The asset urls. It can be a comma separated list of urls for multiple files. |
 | **providers** | `array` |  |    | Public addresses of Node providers that user delegates some permissions. |
 | **services** | `array` |  |    | The list of services attached to the asset |
+| **type** | `string` |  |  `dataset`  | The type of asset to register (dataset, algorithm, workflow, container, subscription) |
 | **license** | `string` |  |    | The asset license (Creative Commons, etc) |
 | **price** | `number` |  |    | The NFT price |
 | **cap** | `number` |  |  `0`  | The NFT minting cap (0 means uncapped) |
@@ -1347,8 +1351,8 @@ ncli nfts1155 order did:nv:afd733c23c41af948be7ec039c3fb2048d437e082a69ea3f336cd
 
 
 
-### transfer [agreementId]
-It allows to transfer a NFT (ERC-1155) to the account of the buyer<br/>
+### claim [agreementId]
+It allows to claim a NFT (ERC-1155) to the account of the buyer<br/>
 
 This command requires a valid `serviceAgreementId` created by the `buyerAccount` that demonstrates that an asset was payed. Having that this command will allow to transfer the asset to the buyer account.<br/>
 
@@ -1365,7 +1369,7 @@ This command requires a valid `serviceAgreementId` created by the `buyerAccount`
 |----------------------|------|-------------:|--------------:|-------------|
 | **sellerAddress** | `string` |  |    | The address of the seller (0x123..) |
 | **buyerAddress** | `string` |  |    | The address of the account who will receive the NFT |
-| **amount** | `number` |  |  `1`  | The number of NFTs (ERC-1155) to transfer |
+| **amount** | `number` |  |  `1`  | The number of NFTs (ERC-1155) to claim |
 | **nftType** | `number` |  |  `1155`  | The NFT type |
 
 
@@ -1373,7 +1377,7 @@ This command requires a valid `serviceAgreementId` created by the `buyerAccount`
 
 
 ```bash
-ncli nfts1155 transfer 0x44dba17d62dd4004c109921cb976ac7c5ec6e4c07d24cc82182b0c49c6381869 --amount 1 --buyerAddress 0xBE5449a6A97aD46c8558A3356267Ee5D2731ab5e
+ncli nfts1155 claim 0x44dba17d62dd4004c109921cb976ac7c5ec6e4c07d24cc82182b0c49c6381869 --amount 1 --buyerAddress 0xBE5449a6A97aD46c8558A3356267Ee5D2731ab5e
 ```
 
 
@@ -1448,21 +1452,22 @@ Utility commands to faciliate files management, encryption, etc<br/>
 Commands:
 
 ### upload [file]
-Upload file to Filecoin<br/>
+Upload file to IPFS or Filecoin<br/>
 
-It uploads a local file to the decentralized storage network Filecoin. It returns a `CID` identifying that file into the storage network. If the `--password` flag is provided, it will encrypts the file before uploading it and will return the password used.<br/>
+It uploads a local file to the decentralized storage network like IPFS or Filecoin. It returns a `CID` identifying that file into the storage network. If the `--password` flag is provided, it will encrypts the file before uploading it and will return the password used.<br/>
 
 #### Positional Arguments
 
 | Name of the Argument | Type | Is required? | Default value | Description |
 |----------------------|------|-------------:|--------------:|-------------|
-| **file** | `string` |  |    | The path to the file to upload to Filecoin |
+| **file** | `string` |  |    | The path to the file to upload |
 
 
 #### Optional Arguments
 
 | Name of the Argument | Type | Is required? | Default value | Description |
 |----------------------|------|-------------:|--------------:|-------------|
+| **where** | `string` |  |  `ipfs`  | The network where upload the file (ipfs or filecoin). |
 | **encrypt** | `boolean` |  |  `false`  | If given it encrypts the file with AES and return password |
 
 
