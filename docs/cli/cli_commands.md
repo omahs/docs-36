@@ -745,7 +745,7 @@ ncli nfts721 deploy test/resources/nfts/NFT721SubscriptionUpgradeable.json --par
 ### clone [nftAddress]
 It clones an existing NFT (ERC-721) contract<br/>
 
-Nevermined Smart Contracts are deployed in a blockchain, with this command it&#39;s possible to clone the implementation of an already deployed Smart Contract. The new contract clonned will be owned by the user doing that clonning action.<br/>
+Nevermined Smart Contracts are deployed in a blockchain, with this command it&#39;s possible to clone the implementation of an already deployed Smart Contract. The new contract cloned will be owned by the user doing that clonning action.<br/>
 
 #### Positional Arguments
 
@@ -871,6 +871,35 @@ This command allows to check if an address is a holder of a specific NFT wrapped
 | Name of the Argument | Type | Is required? | Default value | Description |
 |----------------------|------|-------------:|--------------:|-------------|
 | **address** | `string` |  |    | The address of the account to validate as holder |
+| **nftType** | `number` |  |  `721`  | The NFT type |
+
+
+#### Example/s
+
+
+```bash
+ncli nfts721 hold did:nv:afd733c23c41af948be7ec039c3fb2048d437e082a69ea3f336cdf452a49be7e
+```
+
+
+
+### balance [nftAddress]
+It gets the balance of a NFT<br/>
+
+This command allows to check if an address is a holder of a specific NFT wrapped by a Nevermined DID<br/>
+
+#### Positional Arguments
+
+| Name of the Argument | Type | Is required? | Default value | Description |
+|----------------------|------|-------------:|--------------:|-------------|
+| **nftAddress** | `string` |  |    | The NFT contract address |
+
+
+#### Optional Arguments
+
+| Name of the Argument | Type | Is required? | Default value | Description |
+|----------------------|------|-------------:|--------------:|-------------|
+| **address** | `string` |  |    | The address of the account to get the balance |
 | **nftType** | `number` |  |  `721`  | The NFT type |
 
 
@@ -1140,7 +1169,7 @@ ncli nfts1155 deploy test/resources/nfts/NFT1155.json --params &quot;Token Name&
 ### clone [nftAddress]
 It clones an existing NFT (ERC-1155) contract<br/>
 
-Nevermined Smart Contracts are deployed in a blockchain, with this command it&#39;s possible to clone the implementation of an already deployed Smart Contract. The new contract clonned will be owned by the user doing that clonning action.<br/>
+Nevermined Smart Contracts are deployed in a blockchain, with this command it&#39;s possible to clone the implementation of an already deployed Smart Contract. The new contract cloned will be owned by the user doing that clonning action.<br/>
 
 #### Positional Arguments
 
@@ -1260,6 +1289,36 @@ This command allows to check if an address is a holder of a specific NFT wrapped
 
 ```bash
 ncli nfts1155 hold did:nv:afd733c23c41af948be7ec039c3fb2048d437e082a69ea3f336cdf452a49be7e
+```
+
+
+
+### balance [nftAddress] [did]
+It gets the balance of a NFT<br/>
+
+This command allows to check if an address is a holder of a specific NFT wrapped by a Nevermined DID<br/>
+
+#### Positional Arguments
+
+| Name of the Argument | Type | Is required? | Default value | Description |
+|----------------------|------|-------------:|--------------:|-------------|
+| **nftAddress** | `string` |  |    | The NFT contract address |
+| **did** | `string` |  |    | The asset DID |
+
+
+#### Optional Arguments
+
+| Name of the Argument | Type | Is required? | Default value | Description |
+|----------------------|------|-------------:|--------------:|-------------|
+| **address** | `string` |  |    | The address of the account to get the balance |
+| **nftType** | `number` |  |  `1155`  | The NFT type |
+
+
+#### Example/s
+
+
+```bash
+ncli nfts1155 balance 0xF841Ff2C8abF1751A83923755EbD2F66bBAa5BFE did:nv:afd733c23c41af948be7ec039c3fb2048d437e082a69ea3f336cdf452a49be7e
 ```
 
 
