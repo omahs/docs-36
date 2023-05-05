@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Nevermined Documentation',
+  title: 'Nevermined Core Protocol Documentation',
   tagline:
     'Nevermined champions open Data and AI to lower the barrier of entry for AI adoption and advancement and opposes the centralization of AI development and training data',
   url: 'https://docs.nevermined.io',
